@@ -1,0 +1,109 @@
+.price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        padding-bottom: 100px;
+        border-bottom: 1px solid rgb(42, 64, 124);
+        width: 100%;
+        margin: 0 210px;
+        margin-bottom: 100px;
+    &-card{
+        border-radius: 30px;
+        box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+        background: rgb(15, 31, 75);
+        padding: 50px 70px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 340px;
+        transition: 1s linear;
+            &-title{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 10px;
+            transition: 1s linear;
+            }
+            &-desc{
+            color: rgb(135, 148, 186);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+            text-align: center;
+            padding-bottom: 37px;
+            margin-bottom: 28px;
+            border-bottom: 1px solid rgb(42, 64, 124);
+            width: 100%;
+            }
+            &-price{
+                color: rgb(255, 255, 255);
+                font-size: 60px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 60px;
+                display: flex;
+                align-items: flex-end;
+                transition: 1s linear;
+                span{
+                    font-size: 33px;
+                    line-height: 45px;
+                }
+            }
+            &-month{
+                color: rgb(135, 148, 186);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            button{
+                box-sizing: border-box;
+                border: 1px solid rgb(42, 64, 124);
+                border-radius: 68px;
+                width: 200px;
+                height: 50px;
+                background: none;
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0%;
+                transition: 1s linear;
+            }
+            &:hover{
+                background: white;
+                .price-card-title, 
+                .price-card-price{
+                    color: rgb(23, 39, 85);                
+                }
+                button{
+                    border-radius: 68px;
+                    background: rgb(239, 42, 130);
+                    border-color:  rgb(239, 42, 130);
+                }
+        }
+    }
+}
+
+// &:hover{
+//     background: white;
+//     .price-card-title,
+//     .price-card-price {
+//         color: rgb(23, 39, 85);
+//     }
+//     button{
+//         background: rgb(239, 42, 130);
+//         border-color: rgb(239, 42, 130);
+//     }
+// }
+@media (max-width: 1280px) {
+    .price{
+        flex-wrap: wrap;
+    }
+}

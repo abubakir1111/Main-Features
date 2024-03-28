@@ -1,0 +1,33 @@
+@font-face{
+    font-family: "Roboto";
+    src: url(../../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Roboto";
+    src: url(../../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(135, 148, 186);
+}
+
+@import "./header";
+@import "./main";
+@import "./price";
+@import "./footer";
